@@ -1,0 +1,61 @@
+.welcome{
+	padding-top:15%;
+	h2{
+		font-family:"Roboto Slab";
+		font-style:italic;
+	}
+	h1{
+		font-family:"Montserrat";
+		font-size:80px;
+		font-weight:bold;
+	}
+	.btn{
+		font-family:"Montserrat";
+		margin-top:2%;
+		font-size:20px;
+	}
+}
+section{
+	padding:4% 0;
+	h1{
+		padding-top:1%;
+		font-family:"Montserrat"
+	}
+	.subtitulo{
+		padding-bottom:2%;
+		font-family:"Roboto Slab";
+		font-style:italic;
+		font-size:15px;
+	}
+}
+.servicios{
+	height:35em;
+	margin-bottom:2em;
+	i{
+		background-color:#fed136;
+		@include border-radius(50%);
+		color:white;
+		height:3.3em;
+		width:50%;
+		padding-top:1em;
+		font-size:50px;
+	}
+	@extend .tipografia;
+
+}
+.contenedor{
+	background-color:white;
+	}
+.portafolio{
+	background-color:#f7f7f7;
+	height:40%;
+	.row{
+		.col-md-4{
+			margin-bottom:15px;
+		img{
+		width:100%;
+			}
+		}
+		@extend .tipografia;
+	}
+}
