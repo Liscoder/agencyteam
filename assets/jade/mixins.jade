@@ -1,0 +1,98 @@
+mixin titulo(composicion)
+	h1= composicion
+	p.subtitulo= about
+mixin servicios(title)
+	case title
+		when "E-Commerce"
+			.col-md-4 
+				i.fa.fa-shopping-cart
+				h3= title
+				p= content
+		when "Responsive Design"
+			.col-md-4 
+				i.fa.fa-laptop
+				h3= title
+				p= content
+		when "Web Security"
+			.col-md-4
+				i.fa.fa-lock
+				h3=title
+				p= content
+mixin present(encabezado)
+	h3=encabezado
+mixin fotografia(image)
+	.col-md-4
+		.contenedor			
+			img(src=image)
+			+present("Round Icons")
+			p= graphic		
+mixin fotografia2(imagen,titulos)
+	.col-md-4
+		.contenedor
+			img(src=imagen)
+			+present(titulos)
+			p= website
+mixin datos(fecha,atitle,aimagen)
+	.row.clearfix
+		.col-md-5.text-right
+			h3=fecha
+			h3=atitle
+			p= parrafo
+		.col-md-2
+			img(src=aimagen)
+mixin datos2(fecha,atitle,aimagen)
+	.row.clearfix
+		.col-md-5.float-right
+			.informacion
+				h3=fecha
+				h3=atitle
+				p= parrafo
+		.col-md-2.float-right
+			img(src=aimagen)
+mixin picnic(comment)
+	p= comment
+mixin equipo(person,name,ocupation)
+	.col-md-4
+		img(src=person)
+		h3=name
+		p=ocupation
+		ul
+			li.fa.fa-twitter
+			li.fa.fa-facebook
+			li.fa.fa-linkedin
+mixin logos(logotipo)
+	.col-md-3
+		img(src="img/logos/"+logotipo+".jpg")
+mixin input(place)
+	.form-group
+		input.form-control(
+			placeholder=place
+		)
+mixin textoarea(textoa)
+	.form-group
+		textarea.form-control(
+			placeholder=textoa
+		)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
